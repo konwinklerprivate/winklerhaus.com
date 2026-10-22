@@ -31,14 +31,17 @@
     }
 
     main {
+      background: var(--cream);
       text-align: center;
       max-width: 600px;
       animation: fade-in 1.2s ease-out both;
     }
 
-    .emoji {
-      font-size: 3rem;
+    .logo {
+      width: clamp(12rem, 45vw, 20rem);
+      height: auto;
       margin: 0;
+      mix-blend-mode: multiply;
     }
 
     h1 {
@@ -71,6 +74,16 @@
       opacity: 0.75;
     }
 
+    .credits {
+      margin-top: 3rem;
+      font-size: 0.75rem;
+      opacity: 0.6;
+    }
+
+    .credits a {
+      color: inherit;
+    }
+
     @keyframes fade-in {
       from { opacity: 0; transform: translateY(12px); }
       to { opacity: 1; transform: translateY(0); }
@@ -79,11 +92,12 @@
 </head>
 <body>
   <main>
-    <p class="emoji" aria-hidden="true">🍲</p>
+    <img class="logo" src="vecteezy_sketch-of-bowl-of-pumpkin-porridge-doodle-of-autumn-season_29257029_126/vecteezy_sketch-of-bowl-of-pumpkin-porridge-doodle-of-autumn-season_29257029.jpg" alt="" aria-hidden="true">
     <h1>Winkler Soup Party 2026</h1>
     <p class="date">Saturday, November 14th</p>
-    <p class="details">At the Winkler Haus</p>
+    <p class="details">At the Winkler Haus, starting at 2pm</p>
     <p class="tagline">Bring a soup and an appetite.</p>
+    <p class="credits"><a href="https://www.vecteezy.com/free-vector/soup">Soup Vectors by Vecteezy</a></p>
   </main>
 </body>
 </html>
